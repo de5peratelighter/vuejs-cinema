@@ -1,4 +1,4 @@
-export default Object.freeze({
+export default Object({
   BEFORE_6PM: 'Before 6pm',
   AFTER_6PM: 'After 6pm'
 });

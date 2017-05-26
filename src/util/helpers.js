@@ -20,4 +20,13 @@ function removeClass(el, className) {
   }
 }
 
-export { hasClass, addClass, removeClass };
+let mouseOutHandler = function (event) {
+    let span= event.target.parentNode.getElementsByTagName('SPAN')[0]
+    addClass(span, 'tooltip-show')
+}
+let mouseOverHandler = function (event) {
+    let span= event.target.parentNode.getElementsByTagName('SPAN')[0]
+    removeClass(span, 'tooltip-show')
+}
+
+export { hasClass, addClass, removeClass, mouseOutHandler, mouseOverHandler };
